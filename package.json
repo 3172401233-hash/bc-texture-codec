@@ -1,0 +1,30 @@
+{
+  "name": "bc-texture-codec",
+  "version": "1.0.0",
+  "description": "Zero-dependency, CPU-only Node.js BC1 (DXT1) and BC3 (DXT5) texture block codec for offline asset builds.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./encode": "./lib/encode.js",
+    "./decode": "./lib/decode.js",
+    "./metrics": "./lib/metrics.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "keywords": [
+    "bc1",
+    "bc3",
+    "dxt1",
+    "dxt5",
+    "texture",
+    "codec",
+    "s3tc",
+    "rgba8"
+  ],
+  "license": "MIT"
+}
